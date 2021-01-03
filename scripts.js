@@ -46,3 +46,7 @@ function changeColor(){
 function removeDiv(){
     $(this).parent().remove();
 }
+
+//I was very surprised at the amount of knowledge that I have picked up. my code is smoother.
+// my troubleshooting is worlds apart at this current level and i enjoy solving them!
+//thank you prime (and Dane), I feel gratitude and accomplishment. 
