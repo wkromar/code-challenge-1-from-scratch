@@ -6,9 +6,11 @@ function handleReady(){
     // renderToDom();
     //have items render on the DOM before beginning actions
     $(document).on('click', '#generateDiv', handleGenerateClicks)
-    // $(document).on("click", ".deleteButton", removeDiv);
+    $(document).on("click", ".deleteButton", removeDiv);
     $(document).on("click", ".yellowButton", changeColor);
 }
+
+
 //ready function created
 function handleGenerateClicks (){
     //create a function to handle the functions used on click
@@ -35,9 +37,12 @@ function createDiv(){
     </div>`);
 }
 
-
-
+//changing the class of the selected Div to change background color from red to yellow
 function changeColor(){
     $(this).parent().removeClass('newDiv')
     $(this).parent().addClass('changeYellow')
+}
+
+function removeDiv(){
+    $(this).parent().remove();
 }
